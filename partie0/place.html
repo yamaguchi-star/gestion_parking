@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module place</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">place</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/assadickannadif/Documents/ProjetPython/GestionParking/partie0/place.py">/Users/assadickannadif/Documents/ProjetPython/GestionParking/partie0/place.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pydoc.html">pydoc</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="place.html#Place">Place</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Place">class <strong>Place</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Place">Place</a>(numero,&nbsp;niveau,&nbsp;longueur,&nbsp;hauteur)<br>
+&nbsp;<br>
+Classe&nbsp;<a href="#Place">Place</a>&nbsp;représentant&nbsp;une&nbsp;place&nbsp;de&nbsp;parking&nbsp;individuelle.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;numero&nbsp;(int):&nbsp;Numéro&nbsp;unique&nbsp;de&nbsp;la&nbsp;place.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;niveau&nbsp;(int):&nbsp;Niveau&nbsp;du&nbsp;parking&nbsp;où&nbsp;se&nbsp;situe&nbsp;la&nbsp;place.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;longueur&nbsp;(float):&nbsp;Longueur&nbsp;de&nbsp;la&nbsp;place&nbsp;en&nbsp;mètres.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hauteur&nbsp;(float):&nbsp;Hauteur&nbsp;de&nbsp;la&nbsp;place&nbsp;en&nbsp;mètres.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;disponible&nbsp;(bool):&nbsp;Indique&nbsp;si&nbsp;la&nbsp;place&nbsp;est&nbsp;actuellement&nbsp;disponible&nbsp;(True&nbsp;par&nbsp;défaut).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pourSuperAbonne&nbsp;(bool):&nbsp;Indique&nbsp;si&nbsp;la&nbsp;place&nbsp;est&nbsp;réservée&nbsp;pour&nbsp;les&nbsp;super&nbsp;abonnés&nbsp;(False&nbsp;par&nbsp;défaut).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Place-__init__"><strong>__init__</strong></a>(self, numero, niveau, longueur, hauteur)</dt><dd><span class="code">Initialise&nbsp;une&nbsp;place&nbsp;de&nbsp;parking&nbsp;avec&nbsp;un&nbsp;numéro,&nbsp;un&nbsp;niveau&nbsp;et&nbsp;des&nbsp;dimensions.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;numero&nbsp;(int):&nbsp;Numéro&nbsp;unique&nbsp;de&nbsp;la&nbsp;place.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;niveau&nbsp;(int):&nbsp;Niveau&nbsp;du&nbsp;parking&nbsp;où&nbsp;se&nbsp;situe&nbsp;la&nbsp;place.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;longueur&nbsp;(float):&nbsp;Longueur&nbsp;de&nbsp;la&nbsp;place&nbsp;en&nbsp;mètres.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hauteur&nbsp;(float):&nbsp;Hauteur&nbsp;de&nbsp;la&nbsp;place&nbsp;en&nbsp;mètres.</span></dd></dl>
+
+<dl><dt><a name="Place-estDisponible"><strong>estDisponible</strong></a>(self)</dt><dd><span class="code">Vérifie&nbsp;si&nbsp;la&nbsp;place&nbsp;est&nbsp;disponible.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;si&nbsp;la&nbsp;place&nbsp;est&nbsp;disponible,&nbsp;False&nbsp;sinon.</span></dd></dl>
+
+<dl><dt><a name="Place-estPourSuperAbonne"><strong>estPourSuperAbonne</strong></a>(self)</dt><dd><span class="code">Vérifie&nbsp;si&nbsp;la&nbsp;place&nbsp;est&nbsp;réservée&nbsp;pour&nbsp;les&nbsp;super&nbsp;abonnés.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;si&nbsp;la&nbsp;place&nbsp;est&nbsp;réservée&nbsp;pour&nbsp;les&nbsp;super&nbsp;abonnés,&nbsp;False&nbsp;sinon.</span></dd></dl>
+
+<dl><dt><a name="Place-setEstDisponible"><strong>setEstDisponible</strong></a>(self, disponible)</dt><dd><span class="code">Définit&nbsp;l'état&nbsp;de&nbsp;disponibilité&nbsp;de&nbsp;la&nbsp;place.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;disponible&nbsp;(bool):&nbsp;Nouvel&nbsp;état&nbsp;de&nbsp;disponibilité&nbsp;de&nbsp;la&nbsp;place.</span></dd></dl>
+
+<dl><dt><a name="Place-setEstPourSuperAbonne"><strong>setEstPourSuperAbonne</strong></a>(self, pourSuperAbonne)</dt><dd><span class="code">Définit&nbsp;si&nbsp;la&nbsp;place&nbsp;est&nbsp;réservée&nbsp;pour&nbsp;les&nbsp;super&nbsp;abonnés.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pourSuperAbonne&nbsp;(bool):&nbsp;Nouvel&nbsp;état&nbsp;de&nbsp;réservation&nbsp;pour&nbsp;super&nbsp;abonnés.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
